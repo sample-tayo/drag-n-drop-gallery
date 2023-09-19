@@ -6,7 +6,6 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Link from "next/link";
 import Image from "next/image";
-import BlkLogo from "../assets/hnglogo.svg";
 
 const passwordValidation = Yup.string()
   .required("Password is required")
@@ -56,7 +55,7 @@ const SignIn = () => {
           <div className='mb-10 flex justify-start md:hidden'>
             <Link href='/'>
               <Image
-                src={BlkLogo}
+                src='../assets/hnglogo.svg'
                 alt='logo'
                 width='188'
                 height='21'
@@ -65,7 +64,7 @@ const SignIn = () => {
             </Link>
           </div>
           <h2 style={{ fontSize: "2.5rem", fontWeight: "800" }}>Login</h2>
-          <p className='text-lg'>Find the job made for you!</p>
+          <p className='text-lg'>Sign In to Checkout our Gallery</p>
           <div className='mt-8 space-y-4'>
             <div>
               <label
