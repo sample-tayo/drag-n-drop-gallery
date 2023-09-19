@@ -55,7 +55,7 @@ const SignIn = () => {
           <div className='mb-10 flex justify-start md:hidden'>
             <Link href='/'>
               <Image
-                src='../assets/hnglogo.svg'
+                src='/assets/hnglogo.svg'
                 alt='logo'
                 width='188'
                 height='21'
