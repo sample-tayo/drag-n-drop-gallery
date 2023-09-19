@@ -4,7 +4,7 @@ function Header({ user, logOut }) {
   return (
     <header>
       <Link href='/'>
-        <img src='/assets/hnglogo.svg' alt='logo' />
+        <img src='../assets/hnglogo.svg' alt='logo' />
       </Link>
       {user ? (
         <button onClick={logOut}>Sign Out</button>
