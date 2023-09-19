@@ -5,9 +5,6 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Link from "next/link";
 import Image from "next/image";
-import BlkLogo from "../assets/hnglogo.svg";
-// import hidePassword from "/assets/svgs/hidepassword.svg";
-// import showPassword from "/assets/svgs/showpassword.svg";
 
 const passwordValidation = Yup.string()
   .required("Password is required")

@@ -1,6 +1,4 @@
-import React from "react";
-
-function Search({ searchQuery, setSearchQuery }) {
+function Search({ setSearchQuery }) {
   return (
     <div>
       <div className='flex mx-8 items-start justify-between rounded-t-lg pb-6'>
@@ -31,12 +29,11 @@ function Search({ searchQuery, setSearchQuery }) {
           <div className='flex h-11 w-full flex-row-reverse items-center gap-2 border-2 border-gray-300 bg-white px-4'>
             <input
               type='text'
-              className='w-full bg-white  text-sm outline-none'
+              className='w-full bg-white text-black  text-sm outline-none'
               placeholder='Search images by name or description'
-              value={searchQuery}
               onChange={(e) => {
                 setSearchQuery(e.target.value);
-                console.log(e.target.value); // Check what's being typed in the input field
+                console.log(e.target.value);
               }}
             />
           </div>
