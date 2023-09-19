@@ -1,10 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../assets/hngLogo.svg";
 
 function Header({ user, logOut }) {
   return (
     <header>
       <Link href='/'>
-        <img src='/assets/hnglogo.svg' alt='logo' />
+        <Image
+          src={logo}
+          alt='logo'
+          width='188'
+          height='21'
+          className='mx-auto cursor-pointer'
+        />
       </Link>
       {user ? (
         <button onClick={logOut}>Sign Out</button>
